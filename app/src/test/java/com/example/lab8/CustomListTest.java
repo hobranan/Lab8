@@ -34,16 +34,16 @@ public class CustomListTest {
         assertTrue(list.hasCity(city));
     }
 
-//    @Test
-//    void test_deleteCity() {
-//        list= MockCityList();
-//        City city = new City("Charlottetown", "Prince Edward Island");
-//        list.addCity(city);
-//        assertTrue(list.hasCity(city));
-//        list.deleteCity(city);
-//        assertFalse(list.hasCity(city));
-//    }
-//
+    @Test
+    void test_deleteCity() {
+        list= MockCityList();
+        City city = new City("Charlottetown", "Prince Edward Island");
+        list.addCity(city);
+        assertTrue(list.hasCity(city));
+        list.deleteCity(city);
+        assertFalse(list.hasCity(city));
+    }
+
 //    @Test
 //    void test_countCities() {
 //        list = MockCityList();
