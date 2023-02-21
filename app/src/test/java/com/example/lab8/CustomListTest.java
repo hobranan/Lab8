@@ -34,6 +34,7 @@ public class CustomListTest {
         assertEquals("Charlottetown", cityList.getCities().get(0));
         assertTrue(cityList.hasCity(city));
     }
+    
 //    @Test
 //    void test_deleteCity() {
 //        CustomList cityList = MockCityList();
