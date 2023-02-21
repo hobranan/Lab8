@@ -25,10 +25,6 @@ public class CustomList extends ArrayAdapter<City> {
         this.context = context;
     }
 
-    public CustomList() {
-        super(null, 0, new ArrayList<>());
-    }
-
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -51,8 +47,16 @@ public class CustomList extends ArrayAdapter<City> {
 
     }
 
-    public int getCount() {
-        return cityCustomList.size();
+    /**
+     * This returns a sorted list of cities.
+     *
+     * @return List cities
+     * Return the sorted list
+     */
+    public List getCities() {
+        List list = cityCustomList;
+        Collections.sort(list);
+        return list;
     }
 
     /**
@@ -69,24 +73,12 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     /**
-     * This returns a sorted list of cities.
-     *
-     * @return List cities
-     * Return the sorted list
-     */
-    public List getCities() {
-        List list = cityCustomList;
-        Collections.sort(list);
-        return list;
-    }
-
-    /**
      * This checks if 'cities' list contains a specific city.
      *
      * @param city This is the city to check.
      */
     public boolean hasCity(City city) {
-        return cityCustomList.contains(city);
+//        return cityCustomList.contains(city);
     }
 
     /**
@@ -95,13 +87,21 @@ public class CustomList extends ArrayAdapter<City> {
      *
      * @param city This is the city to delete.
      */
-    public void delete(City city) {
-        if (cityCustomList.contains(city)) {
-            cityCustomList.remove(city);
-        } else {
-            throw new IllegalArgumentException();
-        }
+    public void deleteCity(City city) {
+//        if (cityCustomList.contains(city)) {
+//            cityCustomList.remove(city);
+//        } else {
+//            throw new IllegalArgumentException();
+//        }
     }
 
+    /**
+     * This count of city list.
+     *
+     * @return cityCustomList.size()
+     */
+    public int getCityCount() {
+//        return cityCustomList.size();
+    }
 
 }
