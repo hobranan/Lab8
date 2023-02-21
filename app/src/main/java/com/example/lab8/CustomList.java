@@ -95,13 +95,13 @@ public class CustomList extends ArrayAdapter<City> {
         }
     }
 
-//    /**
-//     * This count of city list.
-//     *
-//     * @return cityCustomList.size()
-//     */
-//    public int getCityCount() {
-////        return cityCustomList.size();
-//    }
+    /**
+     * This count of city list.
+     *
+     * @return cityCustomList.size()
+     */
+    public int getCityCount() {
+//        return cityCustomList.size();
+    }
 
 }
