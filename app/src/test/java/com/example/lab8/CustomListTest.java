@@ -28,33 +28,31 @@ public class CustomListTest {
 
     @Test
     void test_hasCity() {
-        CustomList cityList = MockCityList();
+        list = MockCityList();
         City city = new City("Charlottetown", "Prince Edward Island");
-        cityList.add(city);
-        assertEquals("Charlottetown", cityList.getCities().get(0));
-        assertTrue(cityList.hasCity(city));
+        list.addCity(city);
+        assertTrue(list.hasCity(city));
     }
-    
+
 //    @Test
 //    void test_deleteCity() {
-//        CustomList cityList = MockCityList();
+//        list= MockCityList();
 //        City city = new City("Charlottetown", "Prince Edward Island");
-//        cityList.add(city);
-//        assertEquals("Charlottetown", cityList.getCities().get(0));
-//        assertTrue(cityList.hasCity(city));
-//        cityList.deleteCity(city);
-//        assertFalse(cityList.hasCity(city));
+//        list.addCity(city);
+//        assertTrue(list.hasCity(city));
+//        list.deleteCity(city);
+//        assertFalse(list.hasCity(city));
 //    }
 //
 //    @Test
 //    void test_countCities() {
-//        CustomList cityList = MockCityList();
-//        assertEquals(0, cityList.getCityCount());
+//        list = MockCityList();
+//        assertEquals(0, list.getCityCount());
 //        City city1 = new City("Charlottetown1", "Prince Edward Island1");
-//        cityList.add(city1);
+//        list.addCity(city1);
 //        City city2 = new City("Charlottetown2", "Prince Edward Island2");
-//        cityList.add(city2);
-//        assertEquals(2, cityList.getCityCount());
+//        list.addCity(city2);
+//        assertEquals(2, list.getCityCount());
 //    }
 
 }
